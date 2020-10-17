@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #2: Changing colors</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+
+        }
+    </style>
+    <script>
+        var index = 0
+         
+         function func(){
+         var colors=["red","green","blue"]
+         document.getElementById("mydiv").style.backgroundColor=colors[index];
+         index++;
+         if(index===3)
+         {
+             index=0;
+         }
+    
+}
+
+
+        /* TODO: write JS code here */
+    </script>
+</head>
+<body>
+
+<div id="mydiv" onclick="func()"></div>
+
+
+</div>
+
+</body>
+</html>

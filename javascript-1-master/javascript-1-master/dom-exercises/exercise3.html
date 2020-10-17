@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+<title>exercise3</title>
+
+
+<script>
+
+
+
+ function select(){
+
+    var imagePath = document.getElementById("images").value;
+    document.getElementById("pic").src=imagePath;
+
+
+ }
+
+</script>
+ </head>
+
+
+
+
+    <body>
+
+
+        <select class="custom-select" id="images" onchange="select(this)">
+            <option  id="ob1" value="images/w2.jpg">img1</option>
+            <option id=ob2 value="images/w4.webp">img2</option>
+            <option id=ob3 value="images/ss.PNG">img3</option>
+        
+        
+        </select><br>
+
+
+
+<img  id="pic" src="images/ss.PNG">
+
+
+
+
+
+
+    </body>
+</html>
