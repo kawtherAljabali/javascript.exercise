@@ -1,0 +1,68 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h2>where is orange?</h2>
+
+
+   <script>
+
+    function shoose(){
+   
+      var x=document.getElementById("s").style.color="green";
+      var y=document.getElementById("b").style.color="red"
+      var m=document.getElementById("a").style.color="red"
+      var s=document.getElementById("bl").style.color="red"
+
+
+
+    }
+   
+     function world(event){
+      
+      var c =document.getElementById("myText").value;
+
+      var k= c.split(' ').length;
+
+
+      var b=document.getElementById("demo").innerHTML=k;
+
+
+      if (k > 6 && event.keyCode!==8) {
+        event.preventDefault();
+
+        return false;
+        
+      }
+    
+    
+    }
+
+   </script>
+    
+
+
+    </body>
+
+     
+    <ul id="quiz">
+      <li id="s">Amman</li>
+      <li  id="b">Irbid</li>
+      <li  id="a">jarash</li>
+      <li id="bl">istnboul</li>
+
+    </ul> 
+    <button type="button" onclick="shoose()">click</button><br><br><br><br><br><br><br><br><br>
+
+
+
+
+    <h3>Talk About your self</h3>
+    <input type="text" id="myText"onkeydown="world(event)">
+    <button type="button" onclick="world()">calculate</button>
+    <p id="demo"></p>
+
+
+</html>
